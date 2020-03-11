@@ -1,0 +1,26 @@
+<html>
+    <body>
+        <h1>Scraper UPC upload</h1>
+
+        <form form="csv_upload" action="/transform" method="post" enctype="multipart/form-data">
+            <label for="w_class">UPC CSV File</label>
+            <br>
+            <input type="file" name="data_file" />
+            <br>
+            <br>
+            <input type="submit" />
+
+        </form>
+
+        <form form="source" action="/result" method="POST">
+        <!-- <label for="w_class"></label> -->
+        <br>
+        <!-- <select id="w_class" name="scrape_source">
+          <option value="upc_db">upcitemDB.com (UPC)</option>
+          <option value="upc_index">upcindex.com (UPC)</option>
+          <option value="brick">Brickseek.com - Target (DCPI)</option>
+        </select> -->
+        <input type="submit" value="Download" />
+        </form>
+    </body>
+</html>
